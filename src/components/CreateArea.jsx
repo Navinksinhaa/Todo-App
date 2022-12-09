@@ -8,7 +8,6 @@ export default function CreateArea(props) {
         content:''
     })
 
-    
     const handleChange = (e) => {
         const {name,value} = e.target;
         setNote(prevNote => {
@@ -23,9 +22,7 @@ export default function CreateArea(props) {
         setNote ({
             title:'',
             content:''
-        });
-
-        
+        });    
     }
 
 
@@ -49,8 +46,6 @@ export default function CreateArea(props) {
             />
            <button type="button" class="btn btn-dark"onClick={submitNote}>Add Me</button>
         </form>
-        
-
     </div>
   )
 }
